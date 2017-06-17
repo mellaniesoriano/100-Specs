@@ -77,6 +77,8 @@
  *
  */
 
+ var club_name = "Fight Club";
+
 
 /* Step 9
  *
