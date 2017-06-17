@@ -90,6 +90,12 @@
  *   unknown => undefined
  */
 
+ var gender = {
+  female : "female",
+  male : "male",
+  undefined : "undefined"
+ };
+
 
 /* Step 10
  *
