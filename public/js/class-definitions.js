@@ -380,6 +380,20 @@ function sahara_river() {
  */
 
 
+ function drink(beerName){
+  if(beers.hasOwnProperty(beerName)){
+    if(typeof beers[beerName] === 'string'){
+      return ("This " + beerName + " is " + beers[beerName] + ".");
+    }
+    if(beers[beerName] instanceof Array){
+      return ("This " + beerName + " is " + beers[beerName][0] + " and " + beers[beerName][1] + ".");
+    }
+  } else {
+    return false;
+  }
+ }
+
+
 /* Step 24
  *
  * Define a function named "browseURL" that takes
