@@ -426,6 +426,14 @@ function sahara_river() {
  *
  */
 
+ function listLivingOrgClass() {
+  var list = '';
+  for ( var i = 0; i < livingOrganismClassification.length; i++ ) {
+    list += livingOrganismClassification[i];
+  }
+  return `<ul> <li>${list}</li> </ul>`;
+ }
+
 
 /* Step 26
  *
