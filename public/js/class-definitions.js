@@ -407,6 +407,15 @@ function sahara_river() {
  */
 
 
+ function browseURL(string) {
+  if ( browsers.hasOwnProperty(string) ) {
+    return browsers[string];
+  } else {
+    return false;
+  }
+ }
+
+
 /* Step 25
  *
  * Define a function named "listLivingOrgClass" that
