@@ -239,6 +239,13 @@ var browsers = {
  *
  */
 
+ var laptopCosts = {
+  MacBook : 1500,
+  Alienware : 2500,
+  HP : 499,
+  Surface : 320
+ };
+
 
 /* Step 17
  *
