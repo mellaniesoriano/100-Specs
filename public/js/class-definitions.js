@@ -351,6 +351,15 @@ function sahara_river() {
  *
  */
 
+ function installLinux(string) {
+  var stringIndex = linuxFlavors.indexOf(string);
+  if ( stringIndex !== -1 ) {
+    return true;
+  } else {
+    return false;
+  }
+ }
+
 
 /* Step 23
  *
