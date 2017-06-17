@@ -455,6 +455,17 @@ function sahara_river() {
  *
  */
 
+ function favoritePlanet(string) {
+  var planetIndex = planets.indexOf(string);
+  var randomPlanets = planets[Math.floor(planets.length * Math.random())];
+  if ( planetIndex !== -1 ) {
+    return `I'm from ${string}, but I wish I could go to ${randomPlanets}.`;
+  }
+  if (planetIndex) {
+    return string + " is not a planet! ";
+  }
+ }
+
 
 /* Step 27
  *
