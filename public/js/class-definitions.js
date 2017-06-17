@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -129,6 +130,13 @@
  *   jsonformatter.curiousconcept.com => "104.28.5.70"
  *
  */
+
+ var domains = {
+  "ycombinator.com" : "198.41.190.47",
+  "laughingsquid.com" : "162.159.247.97",
+  "slumlordhosting.com" : "198.61.179.126",
+  "jsonformatter.curiousconcept.com" : "104.28.5.70"
+ };
 
 
 /* Step 12
