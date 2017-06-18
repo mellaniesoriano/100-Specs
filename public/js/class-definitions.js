@@ -1079,7 +1079,7 @@ Scientist.prototype.addDiscovery = function(newDiscovery) {
 
  function Box(contents, isOpen) {
   this.contents = contents;
-  this.isOpen = true;
+  this.isOpen = isOpen;
  }
 
 
@@ -1178,7 +1178,7 @@ var hexagon = new Shape(6);
 // Create 2 boxes
 var cat = new Animal('Cat', 'female');
 var catBox = new Box(cat, true);
-var christmasPresent;
+var christmasPresent = new Box('present', false);
 
 // Create 2 doors
 var automaticDoor;
