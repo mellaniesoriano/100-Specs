@@ -1302,7 +1302,7 @@ var dinner = new Meal(['fish', 'vegetables']);
   } else {
     return 'Could not determine type';
   }
- }
+ };
 
 
 /* Step 84
@@ -1313,6 +1313,14 @@ var dinner = new Meal(['fish', 'vegetables']);
  * Return true if openBox opens the box, false otherwise.
  *
  */
+
+ Box.prototype.openBox = function() {
+  if (this.isOpen === false ) {
+    return this.isOpen = true;
+  } else if ( this.isOpen === true ) {
+    return false;
+  }
+ };
 
 
  /* Step 85
