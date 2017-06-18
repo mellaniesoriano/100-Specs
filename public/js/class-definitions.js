@@ -1380,6 +1380,17 @@ var dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
+ Lightbulb.prototype.flipSwitch = function(on) {
+  var checkOn = "on";
+  if ( on === checkOn ) {
+    return this.isOn = true;
+  } else if ( on === 'string' ) {
+    return this.isOn = false;
+  } else {
+    return this.isOn = false;
+  }
+ }
+
 
  /* Step 89
  *
