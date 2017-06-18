@@ -1061,7 +1061,12 @@ Scientist.prototype.addDiscovery = function(newDiscovery) {
  */
 
  function Shape(sides) {
-  this.sides = null;
+  this.sides = sides;
+  if ( this.sides >= 3 ) {
+    return this.sides;
+  } else {
+    return this.sides = null;
+  }
  }
 
 
@@ -1072,6 +1077,11 @@ Scientist.prototype.addDiscovery = function(newDiscovery) {
  * @param {anything} contents The contents of the box
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
+
+ function Box(contents, isOpen) {
+  this.contents = contents;
+  this.isOpen = true;
+ }
 
 
 /**
