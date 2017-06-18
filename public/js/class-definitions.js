@@ -611,7 +611,7 @@ person.earnMoney();
  *
  */
 
- function Garden(plantsTotal, isWatered) {
+ function Garden(plantsTotal) {
   this.plantsTotal = plantsTotal;
   this.isWatered = false;
  }
@@ -1165,7 +1165,7 @@ Scientist.prototype.addDiscovery = function(newDiscovery) {
 
 
 // Create 2 different species of animals
-var george;
+var george = new Animal('Monkey', 'male');
 var nemo;
 
 // Create 2 different vehicles
