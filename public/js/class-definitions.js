@@ -722,7 +722,7 @@ person.earnMoney();
   } else {
     return 'Gross!';
   }
- }
+ };
 
 
 /* Step 34
@@ -742,6 +742,19 @@ person.earnMoney();
  *   staplePapers
  *
  */
+
+ function Stapler(color, maxPapers) {
+  this.color = color;
+  this.maxPapers = maxPapers;
+ }
+
+ Stapler.prototype.staplePapers = function(numPapers) {
+  if (numPapers <= this.maxPapers ) {
+    return true;
+  } else {
+    return false;
+  }
+ };
 
 
 /* Step 35
