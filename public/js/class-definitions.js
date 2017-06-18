@@ -462,7 +462,7 @@ function sahara_river() {
     return `I'm from ${string}, but I wish I could go to ${randomPlanets}.`;
   }
   if (planetIndex) {
-    return string + " is not a planet! ";
+    return `${string} is not a planet!`;
   }
  }
 
@@ -489,6 +489,24 @@ function sahara_river() {
  *   earnMoney
  *
  */
+
+ function Person(name, money, age, gender) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+ }
+
+ Person.prototype.spendMoney = function() {
+  this.money -= 10;
+ };
+
+Person.prototype.earnMoney = function() {
+  this.money += 10;
+};
+
+var person = new Person('Mellanie', 100, 27, "female");
+person.earnMoney();
 
 
 /* Step 28
