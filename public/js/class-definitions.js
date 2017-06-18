@@ -1361,6 +1361,14 @@ var dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
+ House.prototype.isATallStory = function(storiesTooTall) {
+  if ( this.stories >= storiesTooTall ) {
+    return true;
+  } else {
+    return false;
+  }
+ }
+
 
  /* Step 88
  *
