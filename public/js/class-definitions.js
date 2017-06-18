@@ -749,7 +749,7 @@ person.earnMoney();
  }
 
  Stapler.prototype.staplePapers = function(numPapers) {
-  if (numPapers <= this.maxPapers ) {
+  if ( numPapers <= this.maxPapers ) {
     return true;
   } else {
     return false;
@@ -1246,6 +1246,15 @@ var dinner = new Meal(['fish', 'vegetables']);
  * return "Driving on {streetName}", else return "Driving forward".
  *
  */
+
+ Vehicle.prototype.drive = function(streetName) {
+  if ( typeof streetName === 'string' && streetName ) {
+    return `Driving on ${streetName}`;
+  }
+  if ( typeof streetName !== 'string' || !(streetName) ) {
+    return "Driving forward";
+  }
+ };
 
 
  /* Step 83
