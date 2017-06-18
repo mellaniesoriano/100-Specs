@@ -1275,6 +1275,35 @@ var dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
+ Shape.prototype.getType = function() {
+  if ( this.sides === 3 ) {
+    return "triangle";
+  }
+  if ( this.sides === 4 ) {
+    return "quadrilateral";
+  }
+  if ( this.sides === 5 ) {
+    return "pentagon";
+  }
+  if ( this.sides === 6 ) {
+    return "hexagon";
+  }
+  if ( this.sides === 7 ) {
+    return "heptagon";
+  }
+  if ( this.sides === 8 ) {
+    return "octagon";
+  }
+  if ( this.sides === 9 ) {
+    return "nonagon";
+  }
+  if ( this.sides === 10 ) {
+    return "decagon";
+  } else {
+    return 'Could not determine type';
+  }
+ }
+
 
 /* Step 84
  *
