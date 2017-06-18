@@ -1131,7 +1131,7 @@ Scientist.prototype.addDiscovery = function(newDiscovery) {
 
  function Lightbulb(isOn) {
   this.isOn = true;
- };
+ }
 
 
 /**
@@ -1140,6 +1140,10 @@ Scientist.prototype.addDiscovery = function(newDiscovery) {
  * Cookie class
  * @param {string} flavor The cookie's flavor
  */
+
+ function Cookie(flavor) {
+  this.flavor = flavor;
+ }
 
 
 /**
