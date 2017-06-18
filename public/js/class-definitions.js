@@ -1166,7 +1166,7 @@ Scientist.prototype.addDiscovery = function(newDiscovery) {
 
 // Create 2 different species of animals
 var george = new Animal('Monkey', 'male');
-var nemo;
+var nemo = new Animal('Fish', 'male');
 
 // Create 2 different vehicles
 var civic;
