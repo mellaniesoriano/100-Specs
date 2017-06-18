@@ -611,6 +611,27 @@ person.earnMoney();
  *
  */
 
+ function Garden(plantsTotal, isWatered) {
+  this.plantsTotal = plantsTotal;
+  this.isWatered = false;
+ }
+
+ Garden.prototype.water = function() {
+  this.isWatered = true;
+ };
+
+ Garden.prototype.grow = function() {
+  if ( this.isWatered === true ) {
+    return this.plantsTotal++;
+  } else {
+    return false;
+  }
+ };
+
+ var garden = new Garden(10, false);
+ garden.water();
+ garden.grow();
+
 
 /* Step 32
  *
