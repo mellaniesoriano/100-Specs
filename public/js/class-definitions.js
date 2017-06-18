@@ -1423,7 +1423,7 @@ var dinner = new Meal(['fish', 'vegetables']);
  Meal.prototype.containsJunkFood = function() {
   var junkFood = ['chips', 'soda', 'ice cream', 'popcorn', 'candy'];
   for ( var i = 0; i < junkFood.length; i++ ) {
-    if ( junkFood.indexOf(this.foods[i]) !== -1 ) {
+    if ( this.foods.indexOf(junkFood[i]) !== -1 ) {
       return true;
     } else {
       return false;
@@ -1536,5 +1536,5 @@ var cookieMonsterBlocked = new Cookie('peanut butter').swipedByCookieMonster('Sa
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+var badForYou = new Meal('chips').containsJunkFood();
+var goodForYou = new Meal('veggies').containsJunkFood();
