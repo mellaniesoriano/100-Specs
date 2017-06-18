@@ -1129,7 +1129,7 @@ Scientist.prototype.addDiscovery = function(newDiscovery) {
  */
 
  function Lightbulb(isOn) {
-  this.isOn = true;
+  this.isOn = isOn;
  }
 
 
@@ -1194,7 +1194,7 @@ var twoStory = new House(2);
 
 // Create 2 lightbulbs
 var incandescent = new Lightbulb(true);
-var halogen;
+var halogen = new Lightbulb(false);
 
 // Create 2 cookies of different flavors
 var chocolateChip;
