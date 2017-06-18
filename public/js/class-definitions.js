@@ -572,6 +572,17 @@ person.earnMoney();
  *
  */
 
+ function Pen(color) {
+  this.color = color;
+ }
+
+ Pen.prototype.write = function() {
+  return `${this.color}: Yar Yar Yar`;
+ };
+
+ var pen = new Pen('orange');
+ pen.write();
+
 
 /* Step 31
  *
