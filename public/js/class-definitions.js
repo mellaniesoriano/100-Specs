@@ -1061,9 +1061,8 @@ Scientist.prototype.addDiscovery = function(newDiscovery) {
  */
 
  function Shape(sides) {
-  this.sides = sides;
-  if ( this.sides >= 3 ) {
-    return this.sides;
+  if ( sides >= 3 ) {
+    return this.sides = sides;
   } else {
     return this.sides = null;
   }
@@ -1173,7 +1172,7 @@ var civic = new Vehicle('Honda', 'Civic');
 var forte = new Vehicle('KIA', 'Forte');
 
 // Create 2 shapes with different numbers of sides
-var square;
+var square = new Shape(4);
 var hexagon;
 
 // Create 2 boxes
