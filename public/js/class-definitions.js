@@ -1381,8 +1381,7 @@ var dinner = new Meal(['fish', 'vegetables']);
  */
 
  Lightbulb.prototype.flipSwitch = function(on) {
-  var checkOn = "on";
-  if ( on === checkOn ) {
+  if ( on === 'on' ) {
     return this.isOn = true;
   } else {
     return this.isOn = false;
@@ -1397,6 +1396,14 @@ var dinner = new Meal(['fish', 'vegetables']);
  * and the dayOfTheWeek is "Monday", return true.  Else return false.
  *
  */
+
+ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
+  if ( this.flavor === 'chocolate' && dayOfTheWeek === 'Monday' ) {
+    return true;
+  }  else {
+    return false;
+  }
+ }
 
 
  /* Step 90
