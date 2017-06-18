@@ -1403,7 +1403,7 @@ var dinner = new Meal(['fish', 'vegetables']);
   }  else {
     return false;
   }
- }
+ };
 
 
  /* Step 90
@@ -1419,6 +1419,17 @@ var dinner = new Meal(['fish', 'vegetables']);
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
  *
  */
+
+ Meal.prototype.containsJunkFood = function() {
+  var junkFood = ['chips', 'soda', 'ice cream', 'popcorn', 'candy'];
+  for ( var i = 0; i < junkFood.length; i++ ) {
+    if ( junkFood.indexOf(this.foods[i]) !== -1 ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+ }
 
 
  /* Steps 91 to 100
