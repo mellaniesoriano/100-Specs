@@ -1060,6 +1060,10 @@ Scientist.prototype.addDiscovery = function(newDiscovery) {
  *
  */
 
+ function Shape(sides) {
+  this.sides = null;
+ }
+
 
 /**
  * Step 53
