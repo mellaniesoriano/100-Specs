@@ -1331,6 +1331,14 @@ var dinner = new Meal(['fish', 'vegetables']);
  *
  */
 
+ Door.prototype.openClose = function() {
+  if ( this.isOpen === false ) {
+    return this.isOpen = true;
+  } else if ( this.isOpen === true ) {
+    return this.isOpen = false;
+  }
+ }
+
 
 /* Step 86
  *
